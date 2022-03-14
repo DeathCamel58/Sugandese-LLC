@@ -13,7 +13,8 @@ const Header = ({ siteTitle }) => (
                 </Link>
 
                 <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><Link to="https://randomcpu.com" className="nav-link px-2 text-white">Our Blog</Link></li>
+                    <li><a href="https://randomcpu.com" className="nav-link px-2 text-white">Our Blog</a></li>
+                    <li><Link to="/projects" className="nav-link px-2 text-white">Our Projects</Link></li>
                 </ul>
             </div>
         </div>
