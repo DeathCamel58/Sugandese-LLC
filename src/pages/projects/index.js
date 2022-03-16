@@ -19,21 +19,19 @@ const IndexPage = () => (
 
         <div className="row" data-masonry={"{\"percentPosition\": true }"}>
             <div className="col-lg-6 mb-4">
-                <div className="card">
+                <div className="card p-3">
                     <StaticImage src={"../../images/projects/GitLab.png"} alt={"GitLab"} />
-                    <div className="card-body">
-                        <Link to={"/projects/gitlab-ci-cd"}><h3>GitLab CI/CD Pipelines</h3></Link>
-                        <p className="card-text">
-                            We've done work on fully custom CI/CD pipelines to help our client's developers get their
-                            work done faster while maintaining good quality code through audits.
-                        </p>
+                    <Link to={"/projects/gitlab-ci-cd"}><h3 className="text-dark">GitLab CI/CD Pipelines</h3></Link>
+                    <p className="card-text">
+                        We've done work on fully custom CI/CD pipelines to help our client's developers get their
+                        work done faster while maintaining good quality code through audits.
+                    </p>
 
-                        <Link to={"/projects/gitlab-ci-cd"}>
-                            <p className="text-end">
-                                Read more
-                            </p>
-                        </Link>
-                    </div>
+                    <Link to={"/projects/gitlab-ci-cd"}>
+                        <p className="text-end text-dark">
+                            Read more
+                        </p>
+                    </Link>
                 </div>
             </div>
         </div>

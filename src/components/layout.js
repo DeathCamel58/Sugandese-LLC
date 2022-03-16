@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "../scss/bootstrap.scss"
 import "../scss/components/layout.scss"
 
@@ -28,25 +29,9 @@ const Layout = ({ children }) => {
         <>
             <Header siteTitle={data.site.siteMetadata?.title || `Sugandese LLC`} />
             <div className="container" id="main">
-                <div
-                    style={{
-                        margin: `0 auto`,
-                        maxWidth: 960,
-                        padding: `0 1.0875rem 1.45rem`,
-                    }}
-                >
-                    <main>{children}</main>
-                    <footer
-                        style={{
-                            marginTop: `2rem`,
-                        }}
-                    >
-                        © {new Date().getFullYear()}, Built by
-                        {` `}
-                        <a href="https://randomcpu.com">RandomCPU</a>
-                    </footer>
-                </div>
+                {children}
             </div>
+            <Footer />
         </>
     )
 }
