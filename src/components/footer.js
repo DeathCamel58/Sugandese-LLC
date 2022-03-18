@@ -5,7 +5,7 @@ import "../scss/components/footer.scss"
 
 import "../scss/bootstrap.scss"
 
-const Footer = ({siteTitle}) => (
+const Footer = () => (
     <footer className="bg-dark text-center text-white">
         <div className="container pt-3">
 
