@@ -8,7 +8,7 @@ import "../../scss/components/post.scss"
 import "../../scss/components/misc.scss"
 
 const DockerContainers = () => (
-    <Layout>
+    <Layout title={"Docker Containers"} description={"How we helped a client get custom containers for their CI/CD pipelines."}>
         <div className="container-fluid header-image-bg-dark p-5 mb-3">
             <StaticImage src={"../../images/projects/Docker.png"} alt={"GitLab Logo"} className={"post-header-image"} placeholder="#333333" />
         </div>

@@ -8,8 +8,11 @@ import HeaderCarousel from "../components/headerCarousel"
 import "../scss/components/homepage.scss"
 
 const IndexPage = () => (
-    <Layout>
+    <Layout description={"Here at Sugandese LLC, we use our computer skills to help our clients with all sorts of projects, big and small."}>
+        {/* Add Slider */}
         <HeaderCarousel />
+
+        {/* Content */}
         <div className="container">
             <div className="row">
                 <h1>Sugandese LLC</h1>
@@ -21,6 +24,8 @@ const IndexPage = () => (
                 </p>
             </div>
         </div>
+
+        {/* Three Service Descriptions */}
         <div className="container-fluid bg-dark-custom text-light p-3 mb-3">
             <div className="container">
                 <div className="row">
@@ -53,6 +58,8 @@ const IndexPage = () => (
                 </div>
             </div>
         </div>
+
+        {/* Additional Content at Bottom */}
         <div className="container">
             <div className="row">
                 <h3>*nix Architecture Porting</h3>

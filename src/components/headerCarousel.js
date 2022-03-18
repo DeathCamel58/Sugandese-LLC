@@ -15,6 +15,7 @@ import {Helmet} from "react-helmet";
 
 const HeaderCarousel = () => (
         <>
+            {/* Add Bootstrap JS for Slider */}
             <Helmet>
                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
                         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -23,7 +24,10 @@ const HeaderCarousel = () => (
                         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
                         crossOrigin="anonymous" />
             </Helmet>
+
+            {/* Carousel Item */}
             <div id="carouselExampleIndicators" className="carousel carousel-dark slide header-carousel text-light mb-3" data-bs-ride="carousel">
+                {/* Carousel Navigation */}
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             className="active" aria-current="true" aria-label="Slide 1"/>
@@ -32,7 +36,11 @@ const HeaderCarousel = () => (
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"/>
                 </div>
+
+                {/* Carousel Pages */}
                 <div className="carousel-inner">
+
+                    {/* Carousel Page for GitLab CI/CD */}
                     <div className="carousel-item active">
                         <div className="container carousel-item-container">
                             <div className="carousel-caption">
@@ -49,6 +57,8 @@ const HeaderCarousel = () => (
                             </div>
                         </div>
                     </div>
+
+                    {/* Carousel Page for Docker Containers */}
                     <div className="carousel-item">
                         <div className="container carousel-item-container">
                             <div className="carousel-caption">
@@ -64,6 +74,8 @@ const HeaderCarousel = () => (
                             </div>
                         </div>
                     </div>
+
+                    {/* Carousel Page for Proxmox */}
                     <div className="carousel-item">
                         <div className="container carousel-item-container">
                             <div className="carousel-caption">

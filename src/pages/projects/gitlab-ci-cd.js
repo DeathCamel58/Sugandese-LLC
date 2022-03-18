@@ -8,7 +8,7 @@ import "../../scss/components/post.scss"
 import "../../scss/components/misc.scss"
 
 const GitLabCICD = () => (
-    <Layout>
+    <Layout title={"GitLab CI/CD"} description={"How we helped a client provide automated code quality audits."}>
         <div className="container-fluid header-image-bg-dark p-5 mb-3">
             <StaticImage src={"../../images/projects/GitLab.png"} alt={"GitLab Logo"} className={"post-header-image"} placeholder="#333333" />
         </div>

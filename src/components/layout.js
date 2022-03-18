@@ -14,7 +14,7 @@ import Footer from "./footer"
 import "../scss/bootstrap.scss"
 import "../scss/components/layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title, description }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -27,8 +27,8 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata?.title || `Sugandese LLC`} />
-                {children}
+            <Header siteTitle={data.site.siteMetadata?.title || `Sugandese LLC`} title={title} description={description} />
+            {children}
             <Footer />
         </>
     )

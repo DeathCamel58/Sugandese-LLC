@@ -10,6 +10,7 @@ const Footer = ({siteTitle}) => (
         <div className="container pt-3">
 
             <div className="row">
+                {/* Left Section */}
                 <div className="col-lg-6">
                     <p>
                         Sugandese LLC is a small tech firm that specializes in custom solutions for your company's
@@ -18,9 +19,11 @@ const Footer = ({siteTitle}) => (
                     </p>
                 </div>
 
+                {/* Right Section */}
                 <div className="col-lg-6">
                     <h5 className="text-uppercase">What we do</h5>
 
+                    {/* Links */}
                     <ul className="list-unstyled">
                         <li>
                             <a href="https://randomcpu.com/" className="text-white">Our Blog</a>
